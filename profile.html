@@ -9,6 +9,7 @@
         <meta name="description" content="">
         <meta name="keywords" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="format-detection" content="telephone=no">
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="vendor/swiper/css/swiper.min.css">
         <link rel="stylesheet" href="css/main.css">
@@ -234,252 +235,325 @@
 						<a href="#"><span>Mostrar todo</span></a>
 					</div>
         		</div>
-        		<div class="s_profile__item">
-        			<div class="s_profile__item_head">
-						<p>Pedido n. 1232234 del 29 de octubre de 2017, 09:57</p>
-						<h6>Estado: <b>Actual</b></h6>
-						<i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="10"><path d="M16 2.2L8 10 0 2.2 2.3 0 8 5.6 13.7 0 16 2.2Z" fill="rgb(143, 209, 60)"/></svg></i>
+        		<div class="s_profile__body">
+        			<div class="s_profile__item" data-groups='["Actual"]'>
+        				<div class="s_profile__item_head">
+							<p>Pedido n. 1232234 del 29 de octubre de 2017, 09:57</p>
+							<h6>Estado: <b>Actual</b></h6>
+							<i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="10"><path d="M16 2.2L8 10 0 2.2 2.3 0 8 5.6 13.7 0 16 2.2Z" fill="rgb(143, 209, 60)"/></svg></i>
+        				</div>
+        				<div class="s_profile__item_body">
+							<table class="popup_cart__body">
+								<thead>
+									<tr>
+										<th>Artículo</th>
+										<th>Color</th>
+										<th>Número de</th>
+										<th>Precio por pieza</th>
+										<th>Costo</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<a href="#">
+												<div class="popup_cart__itemImg"><img src="images/cart/1.png" alt=""></div>
+												<p><span>Cartucho para la jarra de filtro. Módulo 505, bactericida</span></p>
+											</a>
+										</td>
+										<td class="popup_cart__itemColors">
+											<a href="#" class="_current" style="background-color: #c006d6;"></a>
+											<a href="#" style="background-color: #f39632;"></a>
+											<a href="#" style="background-color: #8fd13c;"></a>
+											<a href="#" style="background-color: #00488c;"></a>
+											<a href="#" style="background-color: #de2a0b;"></a>
+										</td>
+										<td>
+											<div class="g_num">
+												<div class="g_num__prev"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16"><path d="M7.8 0L0 8 7.8 16 10 13.7 4.4 8 10 2.3 7.8 0Z" fill="rgb(143, 209, 60)"/></svg></div>
+												<div class="g_num__input"><input type="text" value="1"></div>
+												<div class="g_num__next"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16"><path d="M2.2 0L10 8 2.2 16 0 13.7 5.6 8 0 2.3 2.2 0Z" fill="rgb(143, 209, 60)"/></svg></div>
+											</div>
+										</td>
+										<td>19 $</td>
+										<td>130 $</td>
+									</tr>
+									<tr>
+										<td>
+											<a href="#">
+												<div class="popup_cart__itemImg"><img src="images/cart/2.png" alt=""></div>
+												<p><span>Cartucho para la jarra de filtro</span></p>
+											</a>
+										</td>
+										<td class="popup_cart__itemColors">
+											<a href="#" class="_current" style="background-color: #c006d6;"></a>
+											<a href="#" style="background-color: #00488c;"></a>
+											<a href="#" style="background-color: #de2a0b;"></a>
+										</td>
+										<td>
+											<div class="g_num">
+												<div class="g_num__prev"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16"><path d="M7.8 0L0 8 7.8 16 10 13.7 4.4 8 10 2.3 7.8 0Z" fill="rgb(143, 209, 60)"/></svg></div>
+												<div class="g_num__input"><input type="text" value="1"></div>
+												<div class="g_num__next"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16"><path d="M2.2 0L10 8 2.2 16 0 13.7 5.6 8 0 2.3 2.2 0Z" fill="rgb(143, 209, 60)"/></svg></div>
+											</div>
+										</td>
+										<td>19 $</td>
+										<td>130 $</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="s_profile__item_btns">
+								<a href="#" class="g_btn"><span>Cancelar una orden</span><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16"><path d="M2.2 0L10 8 2.2 16 0 13.7 5.6 8 0 2.3 2.2 0Z" fill="rgb(143, 209, 60)"/></svg></a>
+							</div>
+        				</div>
         			</div>
-        			<div class="s_profile__item_body">
-						<table class="popup_cart__body">
-							<thead>
-								<tr>
-									<th>Artículo</th>
-									<th>Color</th>
-									<th>Número de</th>
-									<th>Precio por pieza</th>
-									<th>Costo</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>
-										<a href="#">
-											<div class="popup_cart__itemImg"><img src="images/cart/1.png" alt=""></div>
-											<p><span>Cartucho para la jarra de filtro. Módulo 505, bactericida</span></p>
-										</a>
-									</td>
-									<td class="popup_cart__itemColors">
-										<a href="#" class="_current" style="background-color: #c006d6;"></a>
-										<a href="#" style="background-color: #f39632;"></a>
-										<a href="#" style="background-color: #8fd13c;"></a>
-										<a href="#" style="background-color: #00488c;"></a>
-										<a href="#" style="background-color: #de2a0b;"></a>
-									</td>
-									<td>
-										<div class="g_num">
-											<div class="g_num__prev"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16"><path d="M7.8 0L0 8 7.8 16 10 13.7 4.4 8 10 2.3 7.8 0Z" fill="rgb(143, 209, 60)"/></svg></div>
-											<div class="g_num__input"><input type="text" value="1"></div>
-											<div class="g_num__next"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16"><path d="M2.2 0L10 8 2.2 16 0 13.7 5.6 8 0 2.3 2.2 0Z" fill="rgb(143, 209, 60)"/></svg></div>
-										</div>
-									</td>
-									<td>19 $</td>
-									<td>130 $</td>
-								</tr>
-								<tr>
-									<td>
-										<a href="#">
-											<div class="popup_cart__itemImg"><img src="images/cart/2.png" alt=""></div>
-											<p><span>Cartucho para la jarra de filtro</span></p>
-										</a>
-									</td>
-									<td class="popup_cart__itemColors">
-										<a href="#" class="_current" style="background-color: #c006d6;"></a>
-										<a href="#" style="background-color: #00488c;"></a>
-										<a href="#" style="background-color: #de2a0b;"></a>
-									</td>
-									<td>
-										<div class="g_num">
-											<div class="g_num__prev"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16"><path d="M7.8 0L0 8 7.8 16 10 13.7 4.4 8 10 2.3 7.8 0Z" fill="rgb(143, 209, 60)"/></svg></div>
-											<div class="g_num__input"><input type="text" value="1"></div>
-											<div class="g_num__next"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16"><path d="M2.2 0L10 8 2.2 16 0 13.7 5.6 8 0 2.3 2.2 0Z" fill="rgb(143, 209, 60)"/></svg></div>
-										</div>
-									</td>
-									<td>19 $</td>
-									<td>130 $</td>
-								</tr>
-							</tbody>
-						</table>
-						<div class="s_profile__item_btns">
-							<a href="#" class="g_btn"><span>Cancelar una orden</span><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16"><path d="M2.2 0L10 8 2.2 16 0 13.7 5.6 8 0 2.3 2.2 0Z" fill="rgb(143, 209, 60)"/></svg></a>
+					<div class="s_profile__item" data-groups='["Completado"]'>
+						<div class="s_profile__item_head">
+							<p>Pedido n. 1232234 del 29 de octubre de 2017, 09:57</p>
+							<h6>Estado: <b>Completado</b></h6>
+							<i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="10"><path d="M16 2.2L8 10 0 2.2 2.3 0 8 5.6 13.7 0 16 2.2Z" fill="rgb(143, 209, 60)"/></svg></i>
 						</div>
-        			</div>
-        		</div>
-				<div class="s_profile__item">
-					<div class="s_profile__item_head">
-						<p>Pedido n. 1232234 del 29 de octubre de 2017, 09:57</p>
-						<h6>Estado: <b>Pagado</b></h6>
-						<i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="10"><path d="M16 2.2L8 10 0 2.2 2.3 0 8 5.6 13.7 0 16 2.2Z" fill="rgb(143, 209, 60)"/></svg></i>
-					</div>
-					<div class="s_profile__item_body">
-						<table class="popup_cart__body">
-							<thead>
-								<tr>
-									<th>Artículo</th>
-									<th>Color</th>
-									<th>Número de</th>
-									<th>Precio por pieza</th>
-									<th>Costo</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>
-										<a href="#">
-											<div class="popup_cart__itemImg"><img src="images/cart/1.png" alt=""></div>
-											<p><span>Cartucho para la jarra de filtro. Módulo 505, bactericida</span></p>
-										</a>
-									</td>
-									<td class="popup_cart__itemColors">
-										<a href="#" style="background-color: #de2a0b;"></a>
-									</td>
-									<td>4</td>
-									<td>19 $</td>
-									<td>130 $</td>
-								</tr>
-								<tr>
-									<td>
-										<a href="#">
-											<div class="popup_cart__itemImg"><img src="images/cart/2.png" alt=""></div>
-											<p><span>Cartucho para la jarra de filtro</span></p>
-										</a>
-									</td>
-									<td class="popup_cart__itemColors"></td>
-									<td>3</td>
-									<td>19 $</td>
-									<td>130 $</td>
-								</tr>
-								<tr>
-									<td>
-										<a href="#">
-											<div class="popup_cart__itemImg"><img src="images/cart/1.png" alt=""></div>
-											<p><span>Cartucho para la jarra de filtro. Módulo 505, bactericida</span></p>
-										</a>
-									</td>
-									<td class="popup_cart__itemColors"></td>
-									<td>13</td>
-									<td>19 $</td>
-									<td>130 $</td>
-								</tr>
-								<tr>
-									<td>
-										<a href="#">
-											<div class="popup_cart__itemImg"><img src="images/cart/2.png" alt=""></div>
-											<p><span>Cartucho para la jarra de filtro</span></p>
-										</a>
-									</td>
-									<td class="popup_cart__itemColors">
-										<a href="#" style="background-color: #c006d6;"></a>
-									</td>
-									<td>3</td>
-									<td>19 $</td>
-									<td>130 $</td>
-								</tr>
-								<tr class="popup_cart__total">
-									<td>
-										<b><span>Dirección de envío:</span></b> 28002, Madrid, st. Joaquín Costa, 33
-									</td>
-									<td>
-										<b><span>Información</span> de envío:</b>
-									</td>
-									<td>40 $</td>
-									<td><b>Total por pago:</b></td>
-									<td>240 $</td>
-								</tr>
-							</tbody>
-						</table>
-						<div class="s_profile__item_btns">
-							<a href="#" class="g_btn"><span>Repetir pedido</span><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16"><path d="M2.2 0L10 8 2.2 16 0 13.7 5.6 8 0 2.3 2.2 0Z" fill="rgb(143, 209, 60)"/></svg></a>
-							<a href="#" class="g_btn"><span>Cancelar una orden</span><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16"><path d="M2.2 0L10 8 2.2 16 0 13.7 5.6 8 0 2.3 2.2 0Z" fill="rgb(143, 209, 60)"/></svg></a>
+						<div class="s_profile__item_body">
+							<table class="popup_cart__body">
+								<thead>
+									<tr>
+										<th>Artículo</th>
+										<th>Color</th>
+										<th>Número de</th>
+										<th>Precio por pieza</th>
+										<th>Costo</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<a href="#">
+												<div class="popup_cart__itemImg"><img src="images/cart/1.png" alt=""></div>
+												<p><span>Cartucho para la jarra de filtro. Módulo 505, bactericida</span></p>
+											</a>
+										</td>
+										<td class="popup_cart__itemColors">
+											<a href="#" style="background-color: #de2a0b;"></a>
+										</td>
+										<td>4</td>
+										<td>19 $</td>
+										<td>130 $</td>
+									</tr>
+									<tr>
+										<td>
+											<a href="#">
+												<div class="popup_cart__itemImg"><img src="images/cart/2.png" alt=""></div>
+												<p><span>Cartucho para la jarra de filtro</span></p>
+											</a>
+										</td>
+										<td class="popup_cart__itemColors"></td>
+										<td>3</td>
+										<td>19 $</td>
+										<td>130 $</td>
+									</tr>
+									<tr>
+										<td>
+											<a href="#">
+												<div class="popup_cart__itemImg"><img src="images/cart/1.png" alt=""></div>
+												<p><span>Cartucho para la jarra de filtro. Módulo 505, bactericida</span></p>
+											</a>
+										</td>
+										<td class="popup_cart__itemColors"></td>
+										<td>13</td>
+										<td>19 $</td>
+										<td>130 $</td>
+									</tr>
+									<tr>
+										<td>
+											<a href="#">
+												<div class="popup_cart__itemImg"><img src="images/cart/2.png" alt=""></div>
+												<p><span>Cartucho para la jarra de filtro</span></p>
+											</a>
+										</td>
+										<td class="popup_cart__itemColors">
+											<a href="#" style="background-color: #c006d6;"></a>
+										</td>
+										<td>3</td>
+										<td>19 $</td>
+										<td>130 $</td>
+									</tr>
+									<tr class="popup_cart__total">
+										<td>
+											<b><span>Dirección de envío:</span></b> 28002, Madrid, st. Joaquín Costa, 33
+										</td>
+										<td>
+											<b><span>Información</span> de envío:</b>
+										</td>
+										<td>40 $</td>
+										<td><b>Total por pago:</b></td>
+										<td>240 $</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="s_profile__item_btns">
+								<a href="#" class="g_btn"><span>Repetir pedido</span><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16"><path d="M2.2 0L10 8 2.2 16 0 13.7 5.6 8 0 2.3 2.2 0Z" fill="rgb(143, 209, 60)"/></svg></a>
+								<a href="#" class="g_btn"><span>Cancelar una orden</span><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16"><path d="M2.2 0L10 8 2.2 16 0 13.7 5.6 8 0 2.3 2.2 0Z" fill="rgb(143, 209, 60)"/></svg></a>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="s_profile__item">
-					<div class="s_profile__item_head">
-						<p>Pedido n. 1232234 del 29 de octubre de 2017, 09:57</p>
-						<h6>Estado: <b>Cancelado</b></h6>
-						<i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="10"><path d="M16 2.2L8 10 0 2.2 2.3 0 8 5.6 13.7 0 16 2.2Z" fill="rgb(143, 209, 60)"/></svg></i>
+					<div class="s_profile__item" data-groups='["Cancelado"]'>
+						<div class="s_profile__item_head">
+							<p>Pedido n. 1232234 del 29 de octubre de 2017, 09:57</p>
+							<h6>Estado: <b>Cancelado</b></h6>
+							<i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="10"><path d="M16 2.2L8 10 0 2.2 2.3 0 8 5.6 13.7 0 16 2.2Z" fill="rgb(143, 209, 60)"/></svg></i>
+						</div>
+						<div class="s_profile__item_body">
+							<table class="popup_cart__body">
+								<thead>
+									<tr>
+										<th>Artículo</th>
+										<th>Color</th>
+										<th>Número de</th>
+										<th>Precio por pieza</th>
+										<th>Costo</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<a href="#">
+												<div class="popup_cart__itemImg"><img src="images/cart/1.png" alt=""></div>
+												<p><span>Cartucho para la jarra de filtro. Módulo 505, bactericida</span></p>
+											</a>
+										</td>
+										<td class="popup_cart__itemColors">
+											<a href="#" style="background-color: #de2a0b;"></a>
+										</td>
+										<td>4</td>
+										<td>19 $</td>
+										<td>130 $</td>
+									</tr>
+									<tr>
+										<td>
+											<a href="#">
+												<div class="popup_cart__itemImg"><img src="images/cart/2.png" alt=""></div>
+												<p><span>Cartucho para la jarra de filtro</span></p>
+											</a>
+										</td>
+										<td class="popup_cart__itemColors"></td>
+										<td>3</td>
+										<td>19 $</td>
+										<td>130 $</td>
+									</tr>
+									<tr>
+										<td>
+											<a href="#">
+												<div class="popup_cart__itemImg"><img src="images/cart/1.png" alt=""></div>
+												<p><span>Cartucho para la jarra de filtro. Módulo 505, bactericida</span></p>
+											</a>
+										</td>
+										<td class="popup_cart__itemColors"></td>
+										<td>13</td>
+										<td>19 $</td>
+										<td>130 $</td>
+									</tr>
+									<tr>
+										<td>
+											<a href="#">
+												<div class="popup_cart__itemImg"><img src="images/cart/2.png" alt=""></div>
+												<p><span>Cartucho para la jarra de filtro</span></p>
+											</a>
+										</td>
+										<td class="popup_cart__itemColors">
+											<a href="#" style="background-color: #c006d6;"></a>
+										</td>
+										<td>3</td>
+										<td>19 $</td>
+										<td>130 $</td>
+									</tr>
+									<tr class="popup_cart__total">
+										<td>
+											<b><span>Dirección de envío:</span></b> 28002, Madrid, st. Joaquín Costa, 33
+										</td>
+										<td>
+											<b><span>Información</span> de envío:</b>
+										</td>
+										<td>40 $</td>
+										<td><b>Total por pago:</b></td>
+										<td>240 $</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="s_profile__item_btns">
+								<a href="#" class="g_btn"><span>Repetir pedido</span><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16"><path d="M2.2 0L10 8 2.2 16 0 13.7 5.6 8 0 2.3 2.2 0Z" fill="rgb(143, 209, 60)"/></svg></a>
+								<a href="#" class="g_btn"><span>Cancelar una orden</span><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16"><path d="M2.2 0L10 8 2.2 16 0 13.7 5.6 8 0 2.3 2.2 0Z" fill="rgb(143, 209, 60)"/></svg></a>
+							</div>
+						</div>
 					</div>
-					<div class="s_profile__item_body">
-						<table class="popup_cart__body">
-							<thead>
-								<tr>
-									<th>Artículo</th>
-									<th>Color</th>
-									<th>Número de</th>
-									<th>Precio por pieza</th>
-									<th>Costo</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>
-										<a href="#">
-											<div class="popup_cart__itemImg"><img src="images/cart/1.png" alt=""></div>
-											<p><span>Cartucho para la jarra de filtro. Módulo 505, bactericida</span></p>
-										</a>
-									</td>
-									<td class="popup_cart__itemColors">
-										<a href="#" style="background-color: #de2a0b;"></a>
-									</td>
-									<td>4</td>
-									<td>19 $</td>
-									<td>130 $</td>
-								</tr>
-								<tr>
-									<td>
-										<a href="#">
-											<div class="popup_cart__itemImg"><img src="images/cart/2.png" alt=""></div>
-											<p><span>Cartucho para la jarra de filtro</span></p>
-										</a>
-									</td>
-									<td class="popup_cart__itemColors"></td>
-									<td>3</td>
-									<td>19 $</td>
-									<td>130 $</td>
-								</tr>
-								<tr>
-									<td>
-										<a href="#">
-											<div class="popup_cart__itemImg"><img src="images/cart/1.png" alt=""></div>
-											<p><span>Cartucho para la jarra de filtro. Módulo 505, bactericida</span></p>
-										</a>
-									</td>
-									<td class="popup_cart__itemColors"></td>
-									<td>13</td>
-									<td>19 $</td>
-									<td>130 $</td>
-								</tr>
-								<tr>
-									<td>
-										<a href="#">
-											<div class="popup_cart__itemImg"><img src="images/cart/2.png" alt=""></div>
-											<p><span>Cartucho para la jarra de filtro</span></p>
-										</a>
-									</td>
-									<td class="popup_cart__itemColors">
-										<a href="#" style="background-color: #c006d6;"></a>
-									</td>
-									<td>3</td>
-									<td>19 $</td>
-									<td>130 $</td>
-								</tr>
-								<tr class="popup_cart__total">
-									<td>
-										<b><span>Dirección de envío:</span></b> 28002, Madrid, st. Joaquín Costa, 33
-									</td>
-									<td>
-										<b><span>Información</span> de envío:</b>
-									</td>
-									<td>40 $</td>
-									<td><b>Total por pago:</b></td>
-									<td>240 $</td>
-								</tr>
-							</tbody>
-						</table>
-						<div class="s_profile__item_btns">
-							<a href="#" class="g_btn"><span>Repetir pedido</span><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16"><path d="M2.2 0L10 8 2.2 16 0 13.7 5.6 8 0 2.3 2.2 0Z" fill="rgb(143, 209, 60)"/></svg></a>
-							<a href="#" class="g_btn"><span>Cancelar una orden</span><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16"><path d="M2.2 0L10 8 2.2 16 0 13.7 5.6 8 0 2.3 2.2 0Z" fill="rgb(143, 209, 60)"/></svg></a>
+					<div class="s_profile__item" data-groups='["Actual"]'>
+						<div class="s_profile__item_head">
+							<p>Pedido n. 1232234 del 29 de octubre de 2017, 09:57</p>
+							<h6>Estado: <b>Actual</b></h6>
+							<i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="10"><path d="M16 2.2L8 10 0 2.2 2.3 0 8 5.6 13.7 0 16 2.2Z" fill="rgb(143, 209, 60)"/></svg></i>
+						</div>
+						<div class="s_profile__item_body">
+							<table class="popup_cart__body">
+								<thead>
+									<tr>
+										<th>Artículo</th>
+										<th>Color</th>
+										<th>Número de</th>
+										<th>Precio por pieza</th>
+										<th>Costo</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<a href="#">
+												<div class="popup_cart__itemImg"><img src="images/cart/1.png" alt=""></div>
+												<p><span>Cartucho para la jarra de filtro. Módulo 505, bactericida</span></p>
+											</a>
+										</td>
+										<td class="popup_cart__itemColors">
+											<a href="#" class="_current" style="background-color: #c006d6;"></a>
+											<a href="#" style="background-color: #f39632;"></a>
+											<a href="#" style="background-color: #8fd13c;"></a>
+											<a href="#" style="background-color: #00488c;"></a>
+											<a href="#" style="background-color: #de2a0b;"></a>
+										</td>
+										<td>
+											<div class="g_num">
+												<div class="g_num__prev"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16"><path d="M7.8 0L0 8 7.8 16 10 13.7 4.4 8 10 2.3 7.8 0Z" fill="rgb(143, 209, 60)"/></svg></div>
+												<div class="g_num__input"><input type="text" value="1"></div>
+												<div class="g_num__next"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16"><path d="M2.2 0L10 8 2.2 16 0 13.7 5.6 8 0 2.3 2.2 0Z" fill="rgb(143, 209, 60)"/></svg></div>
+											</div>
+										</td>
+										<td>19 $</td>
+										<td>130 $</td>
+									</tr>
+									<tr>
+										<td>
+											<a href="#">
+												<div class="popup_cart__itemImg"><img src="images/cart/2.png" alt=""></div>
+												<p><span>Cartucho para la jarra de filtro</span></p>
+											</a>
+										</td>
+										<td class="popup_cart__itemColors">
+											<a href="#" class="_current" style="background-color: #c006d6;"></a>
+											<a href="#" style="background-color: #00488c;"></a>
+											<a href="#" style="background-color: #de2a0b;"></a>
+										</td>
+										<td>
+											<div class="g_num">
+												<div class="g_num__prev"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16"><path d="M7.8 0L0 8 7.8 16 10 13.7 4.4 8 10 2.3 7.8 0Z" fill="rgb(143, 209, 60)"/></svg></div>
+												<div class="g_num__input"><input type="text" value="1"></div>
+												<div class="g_num__next"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16"><path d="M2.2 0L10 8 2.2 16 0 13.7 5.6 8 0 2.3 2.2 0Z" fill="rgb(143, 209, 60)"/></svg></div>
+											</div>
+										</td>
+										<td>19 $</td>
+										<td>130 $</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="s_profile__item_btns">
+								<a href="#" class="g_btn"><span>Cancelar una orden</span><svg xmlns="http://www.w3.org/2000/svg" width="10" height="16"><path d="M2.2 0L10 8 2.2 16 0 13.7 5.6 8 0 2.3 2.2 0Z" fill="rgb(143, 209, 60)"/></svg></a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -759,9 +833,9 @@
         <script>window.jQuery || document.write('<script src="vendor/jquery-3.1.1.min"><\/script>')</script>
         <script src="vendor/swiper/js/swiper.min.js"></script>
         <script src="vendor/jquery.validate.min.js"></script>
-		<script src="vendor/jquery.maskedinput.min.js"></script>
+		<script src="vendor/shuffle.min.js"></script>
         <script src="vendor/js.cookie-2.2.0.min.js"></script>
         <script src="js/main.js"></script>
-<script src="_trg.js"></script>
+		<script src="_trg.js"></script>
     </body>
 </html>
