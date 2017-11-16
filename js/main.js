@@ -147,6 +147,57 @@ $(document).ready(function(){
 		});
 	});
 
+	////item-1.html
+	//s_circle
+	if($('.s_circle').length){
+		var circleSlider = new Swiper('.s_circle__body',{
+			slidesPerView: 1,
+			speed: 600,
+			loop: true,
+			effect: 'fade',
+			fadeEffect: {
+				crossFade: true
+			},
+			autoplay: {
+				delay: 5000
+			},
+			on:{
+				slideChange: function(){
+					var n = this.realIndex;
+					$('.s_circle__pager span').eq(n).addClass('_current').siblings('._current').removeClass('_current');
+				}
+			}
+		});
+		$('.s_circle__pager span').click(function(){
+			circleSlider.slideTo($(this).index()+1);
+		});
+	}
+
+	//s_colors
+	if($('.s_circle').length){
+		var colorsSlider = new Swiper('.s_colors__slider_wrp',{
+			slidesPerView: 1,
+			speed: 600,
+			loop: true,
+			effect: 'fade',
+			fadeEffect: {
+				crossFade: true
+			},
+			autoplay: {
+				delay: 3000
+			},
+			on:{
+				slideChange: function(){
+					var n = this.realIndex;
+					$('.s_colors__pager span').eq(n).addClass('_current').siblings('._current').removeClass('_current');
+				}
+			}
+		});
+		$('.s_colors__pager span').click(function(){
+			colorsSlider.slideTo($(this).index()+1);
+		});
+	}
+
 	//coockie
 	if(Cookies.get('was')==undefined){
 		setTimeout(function(){
@@ -551,7 +602,27 @@ $(document).ready(function(){
 			}
 		});
 	}());
+	(function (){
+		var it = $('.s_consult__promo_form');
+		it.validate({
+			rules: {
+				form: {required: false},
+				promo: {required: true}
+			},
+			messages: {},
+			errorPlacement: function (error, element) {},
+			submitHandler: function (form) {
 
+			},
+			success: function () {},
+			highlight: function (element, errorClass) {
+				$(element).addClass('_error');
+			},
+			unhighlight: function (element, errorClass, validClass) {
+				$(element).removeClass('_error');
+			}
+		});
+	}());
 	$('._scroll').click(function(e){
 		e.preventDefault();
 		e.stopPropagation();
