@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="250.844" height="500.68" viewBox="0 0 250.844 500.68">
+  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""/>
+   </rdf:RDF>
+</x:xmpmeta>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<?xpacket end="w"?></metadata>
+<defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke-width: 1px;
+        fill-rule: evenodd;
+        opacity: 0.84;
+        stroke: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="290.156" y1="2888.345" x2="539" y2="2879.655" gradientUnits="userSpaceOnUse">
+      <stop offset="0.004" stop-color="#8fd13c"/>
+      <stop offset="0.022" stop-color="#91d240"/>
+      <stop offset="0.77" stop-color="#edf4e3" stop-opacity="0"/>
+      <stop offset="0.869" stop-color="#f9f9f9"/>
+    </linearGradient>
+  </defs>
+  <path id="Эллипс_3" data-name="Эллипс 3" class="cls-1" d="M538.988,2635.14c-137.425,0-248.83,111.41-248.83,248.85s111.4,248.84,248.83,248.84" transform="translate(-288.656 -2633.66)"/>
+</svg>

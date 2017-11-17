@@ -174,7 +174,7 @@ $(document).ready(function(){
 	}
 
 	//s_colors
-	if($('.s_circle').length){
+	if($('.s_colors').length){
 		var colorsSlider = new Swiper('.s_colors__slider_wrp',{
 			slidesPerView: 1,
 			speed: 600,
@@ -197,6 +197,39 @@ $(document).ready(function(){
 			colorsSlider.slideTo($(this).index()+1);
 		});
 	}
+
+	//down
+	$('.s_item1__down').click(function(e){
+		e.preventDefault();
+		$('body,html').stop().animate({scrollTop: $('._to').offset().top, easing: 'easein'},400);
+	});
+	//video gallery
+	if($('.s_video').length){
+		$('.s_video').lightGallery({
+			selector: '.s_video__video'
+		})
+	}
+
+	////item-2.html
+	//s_arc
+	if($('.s_arc').length){
+		setInterval(function(){
+			if(!$('.s_arc__left li._current').next().length){
+				$('.s_arc__left li').eq(0).addClass('_current')
+					.siblings().removeClass('_current');
+			}else{
+				$('.s_arc__left li._current').next().addClass('_current')
+					.siblings().removeClass('_current');
+			}
+		},2000);
+	}
+	//video gallery
+	if($('.s_desc').length){
+		$('.s_desc').lightGallery({
+			selector: '.s_desc__img_play'
+		})
+	}
+
 
 	//coockie
 	if(Cookies.get('was')==undefined){
@@ -273,7 +306,7 @@ $(document).ready(function(){
 		}
 	});
 	//prevent only numbers
-	$('.g_num__input, input[name="phone"]').on('keydown',function(e){
+	$('.g_num__input, input[name="phone"],input[name="promo"]').on('keydown',function(e){
 		-1!==$.inArray(e.keyCode,[46,8,9,27,13,110,190])||/65|67|86|88/.test(e.keyCode)&&(!0===e.ctrlKey||!0===e.metaKey)||35<=e.keyCode&&40>=e.keyCode||(e.shiftKey||48>e.keyCode||57<e.keyCode)&&(96>e.keyCode||105<e.keyCode)&&e.preventDefault()
 	});
 	$('.popup_cart__itemColors a').click(function(){

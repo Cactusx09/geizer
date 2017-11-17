@@ -515,6 +515,12 @@ $t: .2s;
 				top: .4rem;
 				background-color: $g;
 				border-radius: 50%;
+				transition: $t;
+			}
+			&:hover{
+				&:before{
+					transform: scale(1.6);
+				}
 			}
 		}
 	}
@@ -540,6 +546,12 @@ $t: .2s;
 				font-weight: 700;
 				color: $g;
 				border-radius: 50%;
+				transition: $t;
+			}
+			&:hover{
+				&:before{
+					transform: scale(1.6);
+				}
 			}
 		}
 	}
@@ -675,6 +687,16 @@ p{
 		&:before{
 			width: calc(100% + 16px);
 			right: -6px;
+		}
+	}
+	&:active{
+		&:before{
+			right: 3px;
+			transition: $t/2;
+		}
+		svg{
+			transition: $t/2;
+			transform: translateX(-2px);
 		}
 	}
 }
@@ -2935,7 +2957,7 @@ p{
 	}
 }
 
-//item-1.html
+//item-1.html & item-2.html
 .s_item1{
 	&__body{
 		@include flex(sb,c);
@@ -2980,11 +3002,19 @@ p{
 				color: #d5d5d5;
 				font-size: 1.375rem;
 				text-transform: uppercase;
+				transition: $t;
 			}
 			h3{
 				font-weight: 700;
 				color: $d;
 				font-size: 2.813rem;
+			}
+		}
+		&_item{
+			&:hover{
+				h5{
+					color: $g;
+				}
 			}
 		}
 	}
@@ -3001,6 +3031,22 @@ p{
 		border-radius: 50%;
 		@include flex(c,c);
 		margin-top: 70px;
+		transition: $t;
+		svg{
+			transition: $t;
+		}
+		&:hover{
+			background-color: $d;
+			svg{
+				transform: scale(1.2);
+			}
+		}
+		&:active{
+			transform: scale(.8);
+			svg{
+				transform: none;
+			}
+		}
 	}
 }
 .s_circle{
@@ -3010,6 +3056,16 @@ p{
 	background-repeat: no-repeat;
 	background-position: center right 43%;
 	background-size: contain;
+	&._without_slider{
+		background-position: center;
+		.s_circle{
+			&__txt{
+				max-width: 50%;
+				margin-left: 8%;
+				padding-right: 10%;
+			}
+		}
+	}
 	&__body{
 		position: relative;
 		.swiper-slide-active{
@@ -3082,6 +3138,7 @@ p{
 		}
 	}
 }
+//item-1.html
 .s_protect{
 	h2{
 		margin-top: 70px;
@@ -3140,6 +3197,32 @@ p{
 		@include flex(c,c);
 		overflow: hidden;
 		cursor: pointer;
+		path{
+			transition: $t;
+		}
+		&:hover{
+			i{
+				path{
+					opacity: 1 !important;
+
+				}
+				span{
+					color: $g;
+				}
+			}
+			small{
+				&:nth-of-type(1){
+					background-color: $g;
+				}
+			}
+		}
+		&:active{
+			small{
+				&:nth-of-type(1){
+					transform: translateX(-50%) translateY(-50%) scale(.8);
+				}
+			}
+		}
 		i{
 			position: relative;
 			padding-left: 6px;
@@ -3157,6 +3240,11 @@ p{
 				color: #babab9;
 				opacity: 0.7;
 				font-size: 1.125rem;
+				transition: $t;
+			}
+			svg{
+				position: relative;
+				z-index: 5;
 			}
 			small{
 				position: absolute;
@@ -3171,6 +3259,7 @@ p{
 //					animation: pulse 2s ease 0.5s infinite;
 //					animation-direction: alternate;
 					border: 1px solid  rgba(181, 180, 179, 0.2);
+					transition: $t;
 				}
 				&:nth-of-type(2){
 					&:before{
@@ -3372,6 +3461,164 @@ p{
 				bottom: 132px;
 			}
 		}
+	}
+}
+//item-2.html
+.s_desc{
+	&__body{
+		@include flex(sb,c);
+	}
+	&__img{
+		position: relative;
+		margin-left: 200px;
+		&_item{
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			@include flex(c,c);
+			img{
+				max-width: 120%;
+				max-height: 120%;
+			}
+		}
+		&_play{
+			box-shadow: 0.063rem 0.188rem 0.375rem 0.063rem rgba(0, 0, 0, 0.08);
+			border: 0.063rem solid $g;
+			background-color: $g;
+			width: 70px;
+			height: 70px;
+			@include flex(c,c);
+			padding-left: 3px;
+			border-radius: 50%;
+			position: absolute;
+			top: 50%;
+			margin-top: -35px;
+			margin-left: -35px;
+			cursor: pointer;
+			z-index: 99;
+			transition: $t;
+			user-select: none;
+			path{
+				transition: $t;
+			}
+			&:hover{
+				box-shadow: 0.063rem 0.3rem 0.5rem 0.063rem rgba(0, 0, 0, 0.1);
+				background-color: $d;
+				border-color: $d;
+				path{
+					fill: $g;
+				}
+			}
+			&:active{
+				transition: $t/2;
+				transform: scale(0.9);
+			}
+		}
+	}
+}
+.s_arc{
+	position: relative;
+	margin: 90px 0;
+	&__body{
+
+	}
+	&__left{
+		background-image: url('../images/arc.svg');
+		background-repeat: no-repeat;
+		background-position: left center;
+		background-size: contain;
+		min-height: 380px;
+		padding-top: 78px;
+		li{
+			counter-increment: li;
+			padding-left: 44px !important;
+			transition: $t;
+			font-size: 19px !important;
+			&:not(:last-of-type){
+				margin-bottom: 18px !important;
+			}
+			&:after{
+				position: absolute;
+				content: counter(li);
+				text-align: center;
+				font-weight: 700;
+				color: #fff;
+				font-size: 17px;
+				left: 0;
+				top: 0;
+				line-height: 1.4;
+				transition: $t;
+				transform: scale(0);
+			}
+			span{
+				display: inline-block;
+				transition: $t;
+			}
+			&._current{
+				span{
+					transform: scale(1.06) translateX(5px);
+				}
+				pointer-events: none;
+				&:after{
+					transform: none;
+				}
+				&:before{
+					transform: scale(2.7);
+				}
+			}
+			&:nth-of-type(1){
+				margin-left: 26px;
+			}
+			&:nth-of-type(2){
+				margin-left: 6px;
+			}
+			&:nth-of-type(3){
+				margin-left: -3px;
+			}
+			&:nth-of-type(4){
+				margin-left: -3px;
+			}
+			&:nth-of-type(5){
+				margin-left: 7px;
+			}
+			&:nth-of-type(6){
+				margin-left: 27px;
+			}
+			&:nth-of-type(7){
+				margin-left: 63px;
+			}
+		}
+	}
+	&__right{
+		position: absolute;
+		width: 50%;
+		right: 0;
+		top: 0;
+		height: 100%;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		margin-left: 100px;
+	}
+}
+.s_100{
+	&__body{
+		@include flex(fe,c);
+	}
+	&__img{
+		flex-grow: 2;
+		text-align: right;
+		max-width: 50%;
+		img{
+			max-width: 100%;
+			max-height: 100%;
+		}
+	}
+	&__txt{
+		width: 50%;
+		margin-left: 50px;
 	}
 }
 
@@ -3948,9 +4195,22 @@ p{
 	.s_grid,
 	section.s_article,
 	.s_cart,
+	.s_item1,
+	.s_feature,
+	.s_colors,
+	.s_desc,
+	.s_arc,
 	.s_compare{
 		padding-left: 40px;
 		padding-right: 40px;
+	}
+	.s_colors{
+		&__slider{
+			&_wrp{
+				margin-left: 100px;
+				max-width: 58%;
+			}
+		}
 	}
 	.s_article._sidebar{
 		padding-left: 40px;
@@ -4345,6 +4605,11 @@ p{
 	section.s_article,
 	.s_thnx,
 	.s_cart,
+	.s_item1,
+	.s_feature,
+	.s_colors,
+	.s_desc,
+	.s_arc,
 	.s_compare,
 	.s_services{
 		padding-right: 0;
