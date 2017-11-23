@@ -149,7 +149,7 @@ $(document).ready(function(){
 
 	////item-1.html
 	//s_circle
-	if($('.s_circle').length){
+	if($('.s_circle__slider').length){
 		var circleSlider = new Swiper('.s_circle__body',{
 			slidesPerView: 1,
 			speed: 600,
