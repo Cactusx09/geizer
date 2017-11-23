@@ -1122,6 +1122,7 @@ p{
 				transition: $t*2;
 				transform: translateX(-25%);
 				left: 100%;
+				border-top: 4px solid transparent;
 				top: 0;
 				z-index: -1;
 				background-color: #fff;
@@ -1131,7 +1132,7 @@ p{
 				min-width: 220px;
 				a{
 					display: block;
-					margin-bottom: 13px;
+					margin-bottom: 14px;
 					@include h_center($h:2px);
 				}
 			}
