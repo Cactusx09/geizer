@@ -1327,6 +1327,7 @@ p{
 	&__img{
 		height: 100vh;
 		flex-grow: 2;
+		width: 100%;
 		position: relative;
 		&_item{
 			position: absolute;
@@ -3399,7 +3400,8 @@ p{
 			&._current{
 				pointer-events: none;
 				cursor: default;
-				box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+				box-shadow: 0 0 4px 3px #fff,
+							0 0 5px 4px  $g;
 			}
 			&:nth-of-type(1){
 				width: 7px;
@@ -6857,6 +6859,52 @@ canvas.sketch{
 	}
 }
 
+//IE hacks
+@media screen and (min-width:0\0) {
+	.s_article._sidebar .container{
+		align-items: inherit;
+	}
+	.g_select__head span{
+		margin-right: auto;
+	}
+	.s_compare__left{
+		display: flex;
+		flex-direction: column;
+		&_body{
+			margin-top: auto;
+		}
+	}
+	.s_delivery__info{
+		align-items: inherit;
+	}
+	.s_colors{
+		&__slider_wrp{
+			width: auto;
+		}
+		&__item_img img{
+			max-width: none;
+			max-height: none;
+		}
+	}
+	.s_services{
+		&__right{
+			width: calc(100% -  630px);
+		}
+	}
+	.s_thnx__right{
+		width: calc(100% -  700px);
+		align-items: inherit;
+	}
+}
+
+::selection {
+	background: $g; /* WebKit/Blink Browsers */
+	color: #fff;
+}
+::-moz-selection {
+	background: $g; /* Gecko Browsers */
+	color: #fff;
+}
 
 a[x-apple-data-detectors] {
 	color: inherit !important;
