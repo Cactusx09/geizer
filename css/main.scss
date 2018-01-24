@@ -2138,6 +2138,7 @@ p{
 	}
 	&__slider{
 		&_wrp{
+			flex-grow: 2;
 			.swiper-scrollbar{
 				width: 380px;
 				height: 40px;
